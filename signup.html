@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogpost</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./photos/onlyfanslogo.png" width="300px"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>    
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="signup.html">SIGN IN</a></li>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Ours Services</h1>
+        <div>Come and explore our sites you will love it.
+            <i class="fa fa-heart-o"></i>
+        </div>
+    </section>
+    
+
+        <section class="body">           
+            <div class="container">                
+                <form class="form" id="login">                   
+                    <h1>Login</h1>
+                     <div class="form__message form__message--error"></div>
+                     <div class="form__input-group">
+                         <input type="text" class="form__input" autofocus placeholder= "Username or email">
+                         <div class="form__input-error-message"></div>
+                    </div>
+                    <div class="form__input-group">                        
+                        <input type="password" class="form__input" autofocus placeholder= "password">
+                        <div class="form__input-error-message"></div>                        
+                    </div>
+                    <button class="form__button" type="submit">Continue</button>
+                    <p class="form__text">
+                         <a href="#" class="form__link">Forgot your password?</a>
+                    </p>                     
+                    <p class="form__text">                        
+                        <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+                    </p>
+                </form> 
+                <form class="form form--hidden" id="createAccount">
+                    <h1 class="form__title">Create Account</h1>
+                     <div class="form__message form__message--error"></div>
+                     <div class="form__input-group">
+                         <input type="text" id="signupUsername" class="form__input" autofocus placeholder= "Username">
+                         <div class="form__input-error-message"></div>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="text" class="form__input" autofocus placeholder="Email Address">
+                        <div class="form__input-error-message"></div>
+                   </div>
+                   <div class="form__input-group">
+                       <input type="password" class="form__input" autofocus placeholder= "Password">
+                       <div class="form__input-error-message"></div>
+                   </div>
+                   <div class="form__input-group">
+                        <input type="password" class="form__input" autofocus placeholder= "Confirm Password">
+                        <div class="form__input-error-message"></div>
+                   </div>
+                    <button class="form__button" type="submit">Continue</button>
+                    <p class="form__text">
+                        <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                    </p>
+                </form>     
+            </div>
+        </section>
+
+        <!-----------------------------fotrr------------------------->
+
+        <section class="footer">
+            <h4>About us</h4>
+            <P>We have been providing satisfactio service so whats are you
+            thinking come and join aur premium membership at a minimum
+            discount. Also for any queries please free to contact us</P>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-google"></i>
+            </div>
+            <p> Made with <i class="fa fa-heart-o"></i> Seri Zawah</p>
+
+        </section>
+
+<!----------------------------Javascript for toggle Menu--------------------->
+   <script>
+
+       var navLinks = document.getElementById("navLinks");
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+   </script>
+
+   <script src="./main.js"></script>
+
+</body>
+</html>
